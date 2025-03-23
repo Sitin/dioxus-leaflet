@@ -1,0 +1,17 @@
+[package]
+name = "dioxus-leaflet"
+version = { workspace = true }
+authors = { workspace = true }
+edition = "2021"
+
+[dependencies]
+dioxus = { workspace = true }
+
+async-std = { workspace = true }
+uuid = { workspace = true }
+
+[features]
+default = []
+web = ["dioxus/web", "uuid/js"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]

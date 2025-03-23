@@ -1,0 +1,56 @@
+#
+# This .gitignore file takes opt-in approach.
+# This means that we ingnore everything and only include specific files.
+#
+
+# Ignore everything
+*
+# Unless
+
+#######################################
+# Generic
+#######################################
+
+# Git
+!.gitignore
+!/.gitmodules
+!.gitkeep
+
+# Documentation
+!/README.md
+
+# Cargo
+!/Cargo.lock
+!/Cargo.toml
+
+# Dioxus
+!/Dioxus.toml
+
+#######################################
+# Sources
+#######################################
+
+# Library
+!/dioxus-leaflet/
+!/dioxus-leaflet/assets/
+!/dioxus-leaflet/assets/**/
+!/dioxus-leaflet/assets/**/*.css
+!/dioxus-leaflet/assets/**/*.js
+!/dioxus-leaflet/src/
+!/dioxus-leaflet/src/*.rs
+!/dioxus-leaflet/src/**/
+!/dioxus-leaflet/src/**/*.rs
+!/dioxus-leaflet/Cargo.toml
+
+# Example application
+!/example/
+!/example/assets/
+!/example/assets/*.css
+!/example/assets/*.ico
+!/example/assets/*.svg
+!/example/src/
+!/example/src/*.rs
+!/example/src/**/
+!/example/src/**/*.rs
+!/example/Cargo.toml
+!/example/input.css

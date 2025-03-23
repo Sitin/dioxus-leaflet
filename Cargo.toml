@@ -1,0 +1,32 @@
+[workspace]
+resolver = "3"
+members = [
+    "dioxus-leaflet",
+    "example",
+]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Mykhailo Ziatin <mikhail.zyatin@gmail.com>"]
+
+[workspace.dependencies]
+dioxus = { version = "0.6.0" }
+
+# General dependencies
+async-std = "1.13.1"
+uuid = { version = "1.16.0", default-features = false, features = ["v4"] }
+
+# Workspace members
+dioxus-leaflet = { path = "./dioxus-leaflet" }
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.android-dev]
+inherits = "dev"
+
+[profile.server-dev]
+inherits = "dev"

@@ -1,0 +1,18 @@
+[package]
+name = "example"
+version = "0.0.0"
+authors = ["Mykhailo Ziatin <mikhail.zyatin@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { workspace = true }
+
+dioxus-leaflet = { workspace = true }
+
+[features]
+default = ["web", "dioxus-leaflet/web"]
+web = ["dioxus/web", "dioxus-leaflet/web"]
+desktop = ["dioxus/desktop", "dioxus-leaflet/web"]
+mobile = ["dioxus/mobile", "dioxus-leaflet/web"]
