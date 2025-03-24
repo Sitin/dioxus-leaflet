@@ -10,7 +10,7 @@ I'll would be happy to get any help from those who interested in a quick map sol
 ## Example
 
 ```rust
-use dioxus::prelide::*;
+use dioxus::prelude::*;
 use dioxus_leaflet::{Map, TileLayer};
 
 #[component]
