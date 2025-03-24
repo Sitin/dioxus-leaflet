@@ -18,9 +18,7 @@ pub fn MapContainer() -> Element {
     rsx! {
         Map {
             style: "min-height: 300px; bottom: 0px; height: calc(100vh - 40px);",
-            lat: 51.505,
-            lng: -0.09,
-            zoom: 14,
+            lat: 51.505, lng: -0.09, zoom: 14,
             TileLayer {
                 tiles: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{{z}}/{{y}}/{{x}}",
                 attribution: r#"&copy; <a href="https://www.esri.com/">Esri</a> i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"#,
