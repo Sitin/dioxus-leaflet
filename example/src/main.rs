@@ -1,7 +1,5 @@
 use dioxus::prelude::*;
-use dioxus_leaflet::components::TileLayer;
-use dioxus_leaflet::Map;
-use std::ops::Deref;
+use dioxus_leaflet::{Map, TileLayer};
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/main.css");
