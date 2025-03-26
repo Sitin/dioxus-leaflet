@@ -2,9 +2,6 @@
 
 use dioxus::prelude::*;
 
-/// Leaflet styles (`leaflet.css`)
-pub const LEAFLET_CSS: Asset = asset!("/assets/vendors/leaflet.css");
-/// Leaflet JavaScript (`leaflet.js`)
-pub const LEAFLET_JS: Asset = asset!("/assets/vendors/leaflet.js");
+pub(crate) const LEAFLET_CSS: Asset = asset!("/assets/vendors/leaflet.css");
 
-pub(crate) const DIOXUS_LEAFLET_JS: Asset = asset!("/assets/dioxus-leaflet.js");
+pub(crate) const BINDINGS_JS: Asset = asset!("/assets/bindings.js");

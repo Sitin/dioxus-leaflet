@@ -10,6 +10,14 @@ dioxus = { workspace = true }
 async-std = { workspace = true }
 uuid = { workspace = true }
 
+futures-util = "0.3.31"
+futures = "0.3.31"
+
+dioxus-leaflet-core = { workspace = true }
+
+[build-dependencies]
+dioxus-leaflet-core = { workspace = true, features = ["generator"] }
+
 [features]
 default = []
 web = ["dioxus/web", "uuid/js"]

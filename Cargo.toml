@@ -2,6 +2,7 @@
 resolver = "3"
 members = [
     "dioxus-leaflet",
+    "dioxus-leaflet-core",
     "example",
 ]
 
@@ -16,8 +17,19 @@ dioxus = { version = "0.6.0" }
 async-std = "1.13.1"
 uuid = { version = "1.16.0", default-features = false, features = ["v4"] }
 
+# JS interoperation
+serde = "1.0.219"
+specta = "2.0.0-rc.22"
+specta-typescript = "0.0.9"
+
 # Workspace members
-dioxus-leaflet = { path = "./dioxus-leaflet" }
+[workspace.dependencies.dioxus-leaflet]
+version = "0.1.0-rc.1"
+path = "./dioxus-leaflet"
+
+[workspace.dependencies.dioxus-leaflet-core]
+version = "0.1.0-rc.1"
+path = "./dioxus-leaflet-core"
 
 [profile]
 

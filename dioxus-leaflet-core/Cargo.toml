@@ -1,0 +1,19 @@
+[package]
+name = "dioxus-leaflet-core"
+version = { workspace = true }
+authors = { workspace = true }
+edition = "2021"
+
+[dependencies]
+specta = { workspace = true, features = ["derive", "export", "serde"] }
+serde = { workspace = true, features = ["derive"] }
+
+specta-typescript = { workspace = true, features = ["function"], optional = true }
+
+[features]
+default = []
+
+generator = [
+    "specta/function",
+    "dep:specta-typescript",
+]

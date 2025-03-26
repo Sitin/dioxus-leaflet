@@ -1,6 +1,6 @@
 #
 # This .gitignore file takes opt-in approach.
-# This means that we ingnore everything and only include specific files.
+# This means that we ingnore everything by default and only include specific files.
 #
 
 # Ignore everything
@@ -26,23 +26,52 @@
 # Dioxus
 !/Dioxus.toml
 
+# NPM
+!/package.json
+!/package-lock.json
+
+# WebPack
+!/tsconfig.json
+!/webpack.config.js
+
+# Project marker
+!/.DIOXUS-LEAFLET
+
 #######################################
 # Sources
 #######################################
 
+#======================================
 # Library
+#======================================
 !/dioxus-leaflet/
 !/dioxus-leaflet/assets/
 !/dioxus-leaflet/assets/**/
 !/dioxus-leaflet/assets/**/*.css
 !/dioxus-leaflet/assets/**/*.js
+!/dioxus-leaflet/bindings/
+!/dioxus-leaflet/bindings/**/
+!/dioxus-leaflet/bindings/**/*.ts
 !/dioxus-leaflet/src/
 !/dioxus-leaflet/src/*.rs
 !/dioxus-leaflet/src/**/
 !/dioxus-leaflet/src/**/*.rs
 !/dioxus-leaflet/Cargo.toml
+!/dioxus-leaflet/build.rs
 
+#======================================
+# Core Interfaces
+#======================================
+!/dioxus-leaflet-core/
+!/dioxus-leaflet-core/src/
+!/dioxus-leaflet-core/src/*.rs
+!/dioxus-leaflet-core/src/**/
+!/dioxus-leaflet-core/src/**/*.rs
+!/dioxus-leaflet-core/Cargo.toml
+
+#======================================
 # Example application
+#======================================
 !/example/
 !/example/assets/
 !/example/assets/*.css

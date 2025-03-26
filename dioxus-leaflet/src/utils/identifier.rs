@@ -1,4 +1,4 @@
-#[derive(Clone)]
+#[derive(Clone, PartialEq)]
 pub(crate) struct IdentifiedElementSpecs(String);
 
 impl IdentifiedElementSpecs {
