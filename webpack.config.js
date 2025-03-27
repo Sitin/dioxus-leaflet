@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'dioxus-leaflet', 'bindings', 'src', 'index.ts'),
+    entry: path.resolve(__dirname, 'bindings', 'src', 'index.ts'),
     module: {
         rules: [
             {
@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         filename: 'bindings.js',
-        path: path.resolve(__dirname, 'dioxus-leaflet', 'bindings', 'dist'),
+        path: path.resolve(__dirname, 'bindings', 'dist'),
     },
     optimization: {
         minimize: true,

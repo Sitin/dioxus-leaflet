@@ -49,15 +49,19 @@
 !/dioxus-leaflet/assets/**/
 !/dioxus-leaflet/assets/**/*.css
 !/dioxus-leaflet/assets/**/*.js
-!/dioxus-leaflet/bindings/
-!/dioxus-leaflet/bindings/**/
-!/dioxus-leaflet/bindings/**/*.ts
 !/dioxus-leaflet/src/
 !/dioxus-leaflet/src/*.rs
 !/dioxus-leaflet/src/**/
 !/dioxus-leaflet/src/**/*.rs
 !/dioxus-leaflet/Cargo.toml
 !/dioxus-leaflet/build.rs
+
+#======================================
+# Library
+#======================================
+!/bindings/
+!/bindings/**/
+!/bindings/**/*.ts
 
 #======================================
 # Core Interfaces

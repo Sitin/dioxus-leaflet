@@ -43,6 +43,7 @@ fn main() {
 
     // Generate TypeScript bindings for Rust types from `dioxus-leaflet-core`
     let dist = base_path
+        .join("..")
         .join("bindings")
         .join("src")
         .join("core.gen.ts");
@@ -60,6 +61,7 @@ fn main() {
     // Copy bindings into `assets` folder
     copy(
         base_path
+            .join("..")
             .join("bindings")
             .join("dist")
             .join("bindings.js"),
